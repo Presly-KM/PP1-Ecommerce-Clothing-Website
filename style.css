@@ -263,11 +263,25 @@ header li > a {
     display: block;
 }
 
+
     /* 01. HEADER --------------------
     *   b. Header Nav
     * ---------------*/
-
-
+.trigger {
+    font-size: 1.5em;
+    display: flex;
+    padding: 0.25em;
+    margin-right: 0.5em;
+}
+.logo a {
+    font-family: 'Poppins';
+    font-size: 1.75em;
+    position: relative;
+    font-weight: var(--fw8);
+    display: flex;
+    padding-left: 0.75em;
+    margin-right: 2em;
+}
 
 
     /* 01. HEADER --------------------
@@ -530,5 +544,8 @@ header li > a {
 @media screen and (min-width: 992px) {
     .container {
         padding: 0 2em;
+    }
+    .desktop-hide {
+        display: none;
     }
 }
