@@ -153,6 +153,23 @@ h4 {
     padding: 0.0.75em 0 0;
 }
 
+
+.mobile-hide {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------
     *  Structure styling
 
@@ -267,6 +284,11 @@ header li > a {
     /* 01. HEADER --------------------
     *   b. Header Nav
     * ---------------*/
+.header-nav {
+    padding: 0.5em 0;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid var(--border-color);
+}
 .trigger {
     font-size: 1.5em;
     display: flex;
@@ -325,8 +347,20 @@ nav .fly-item {
     right: -32px;
     background-color: var(--primary-color);
 }
-
-
+.header-nav .right {
+    position: relative;
+    margin-left: auto ;
+}
+.header-nav .right .icon-large {
+    position: relative;
+}
+.header-nav .right .fly-item {
+    top: 0;
+    right: 16px;
+    width: 16px;
+    background-color: var(--secondary-dark-color);
+    border-radius: var(--percent50)
+}
 
 
 
@@ -594,5 +628,19 @@ nav .fly-item {
     }
     .desktop-hide {
         display: none;
+    }
+    .mobile-hide {
+        display: block;
+    }
+    .logo a {
+        margin-right: 2em;
+    }
+    .header-nav {
+        padding: 0;
+        margin: 0;
+        border-bottom: 0;
+    }
+    .header-nav .right li > a {
+        margin-left: 1em;
     }
 }
