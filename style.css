@@ -138,7 +138,6 @@ h4 {
 .second-links a:hover {
     color: var(--light-text-color);
 }
-
 .icon-small, .icon-large {
     display: flex;
     align-items: center;
@@ -147,7 +146,7 @@ h4 {
 }
 .icon-small {
     font-size: 1.25em;
-    margin: auto;
+    margin-left: auto;
 }
 .icon-large {
     font-size: 1.75em;
@@ -155,9 +154,11 @@ h4 {
 }
 
 
+
 .mobile-hide {
     display: none;
 }
+
 
 .object-cover img {
     position: absolute;
@@ -406,11 +407,9 @@ nav .fly-item {
 
 
 
-
 /* 01. HEADER --------------------
     *   c. Header Main, Departments Category
     * ---------------*/
-
 .header-main {
     background-color: var(--secondary-dark-color);
     padding: 1.5em 0;
@@ -440,6 +439,13 @@ nav .fly-item {
     height: 60px;
     width: 60px;
 }
+
+.dpt-menu > ul > li > a {
+    font-size: var(--font-small);
+    height: 46px;
+    align-items: center;
+}
+    
 /* 01. HEADER --------------------
     *   d. Search Form
     * ---------------*/
