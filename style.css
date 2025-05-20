@@ -447,6 +447,9 @@ nav .fly-item {
 .dpt-menu .has-child:hover ul {
     display : block;
 }
+.dpt-menu .has-child li a:hover {
+    text-decoration: underline;
+}
     
 /* 01. HEADER --------------------
     *   d. Search Form
