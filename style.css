@@ -89,6 +89,15 @@ h4 {
     font-weight: var(--fw6);
 }
 
+
+
+
+
+
+
+
+
+
 /* ------------------
  *  REUSABLE SELECTOR 
  * ------------------- */
@@ -149,6 +158,7 @@ h4 {
 .mobile-hide {
     display: none;
 }
+
 .object-cover img {
     position: absolute;
     object-fit: cover;
@@ -161,6 +171,8 @@ h4 {
     flex-shrink: 0;
     overflow: hidden;
 }
+
+
 .primary-button, .secondary-button, .light-button {
     font-size: var(--font-small);
     padding: 0.9em 2em;
@@ -197,7 +209,6 @@ h4 {
     gap: 1em;
     transition: var(--trans-color)
 }
-
 /* ------------------
     *  Structure styling
 
@@ -240,15 +251,9 @@ h4 {
     15. RESPONSIVE
 *
 * ------------------- */
-
-
-
-
-
 /* ------------------
  * 01. HEADER
  * ------------------- */
-
 header li > a {
     display: flex;
     position: relative;
@@ -379,9 +384,6 @@ nav .fly-item {
     margin-bottom: 1.5em;
     z-index: 1;
 }
-
-
-
 /* 01. HEADER --------------------
     *   c. Header Main, Departments Category
     * ---------------*/
@@ -612,8 +614,6 @@ nav .fly-item {
 /* --------------------
  *   13. PAGE CHECKOUT
  * ---------------*/
-
-
 
 
 
