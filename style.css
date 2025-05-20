@@ -384,11 +384,33 @@ nav .fly-item {
     margin-bottom: 1.5em;
     z-index: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 01. HEADER --------------------
     *   c. Header Main, Departments Category
     * ---------------*/
 
-
+.header-main {
+    background-color: var(--secondary-dark-color);
+    padding: 1.5em 0;
+    margin-bottom: 2em;
+}
 
 
 /* 01. HEADER --------------------
