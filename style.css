@@ -72,7 +72,6 @@ h3,
 h4 {
     font-family: 'Poppins';
 }
-
 h1 {
     font-size: calc(1.3em + 1vw);
     font-weight: var(--fw8);
@@ -99,38 +98,31 @@ h4 {
     margin: 0 auto;
     padding: 0 0.938em;
 }
-
 .column {
     margin-left: -0.938em;
     margin-right: -0.938em;
 }
-
 .column .row {
     padding: 0 0.938em;
 }
-
 .flexwrap {
     display: flex;
     flex-wrap: wrap;
 }
-
 .flexcenter {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 .flexitem {
     display: flex;
     align-items: center;
 }
-
 .flexcol {
     display: flex;
     flex-direction: column;
     gap: 1em;
 }
-
 .main-links a:hover {
     color: var(--secondary-color);
 }
@@ -157,8 +149,6 @@ h4 {
 .mobile-hide {
     display: none;
 }
-
-
 .object-cover img {
     position: absolute;
     object-fit: cover;
@@ -171,8 +161,6 @@ h4 {
     flex-shrink: 0;
     overflow: hidden;
 }
-
-
 .primary-button, .secondary-button, .light-button {
     font-size: var(--font-small);
     padding: 0.9em 2em;
@@ -209,9 +197,6 @@ h4 {
     gap: 1em;
     transition: var(--trans-color)
 }
-
-
-
 
 /* ------------------
     *  Structure styling
@@ -255,9 +240,6 @@ h4 {
     15. RESPONSIVE
 *
 * ------------------- */
-
-
-
 
 
 
@@ -642,22 +624,9 @@ nav .fly-item {
  * ---------------*/
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* --------------------
  *   15. RESPONSIVE
  * ---------------*/
-
-
 @media screen and (min-width: 992px) {
     .container {
         padding: 0 2em;
@@ -694,7 +663,6 @@ nav .fly-item {
         box-shadow: rgb(0 0 0 / 20%) 0 30px 20px -30px;
         z-index: 100;
     }
-
     nav .mega .wrapper {
          display: flex;
     }
