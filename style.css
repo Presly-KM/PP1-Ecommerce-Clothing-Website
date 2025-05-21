@@ -613,18 +613,25 @@ form.search button:hover {
     margin: 0 0.5em 0.5em 0;
 }
 
-
-
 /* ------------------
  * 02. SLIDER
  * ------------------- */
-.slider > div > .wrapper {
-    width: calc(100% - (300px + 2em));
-    margin-left: auto;
-}
+
 .slider .item {
     position: relative;
     height: 474px;
+}
+.slider .item::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 450px;
+    height: 300px;
+    background-color: var(--white-color);
+    z-index: 1;
+    filter: blur(50px);
+    opacity: .8;
 }
 .slider .text-content {
     position: absolute;
@@ -651,19 +658,34 @@ form.search button:hover {
     text-transform: uppercase;
     letter-spacing: -1px;
 }
-
-
-
-
-
-
-
-
-
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--secondary-dark-color);
+}
 
 /* -------------------
  * 03. BRANDS
  * ------------------- */
+.brands .wrapper {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 2em 0;
+}
+.brands .item img {
+    opacity: .25;
+    transition: opacity .3s;
+}
+.brands .item a:hover img {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -897,23 +919,14 @@ form.search button:hover {
         margin-left: 1em;
     }
 
+  
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-    /* mega menu */
+  /* mega menu */
     nav .mega {
         position: absolute;
         width: var(--percent100);
@@ -1041,7 +1054,7 @@ form.search button:hover {
         left: 0;
         right: 0;
         bottom: 0;
-        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+        background: linear-gradient(90deg, rgba(225, 225, 225, 1) 0%, rgba(255, 225, 225, 0) 100%);
 
     }
     .dpt-menu .mega {
@@ -1052,9 +1065,24 @@ form.search button:hover {
     .dpt-menu .has-child:hover .mega {
         display: flex;
     }
+
+    /* slider */
+    .slider > div > .wrapper {
+        width: calc(100% - (300px + 2em));
+        margin-left: auto;
+    }
    
     
 }
+
+
+
+
+
+
+
+
+
 
 
 
