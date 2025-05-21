@@ -215,6 +215,13 @@ h4 {
     font-size: var(--font-smaller);
     color: var(--light-text-color);
 }
+
+
+
+
+
+
+
 /* ------------------
     *  Structure styling
 
@@ -257,22 +264,25 @@ h4 {
     15. RESPONSIVE
 *
 * ------------------- */
+
+
 /* ------------------
  * 01. HEADER
  * ------------------- */
-header li > a {
+
+:where(.off-canvas, header) li > a {
     display: flex;
     position: relative;
     line-height: inherit;
     transition: var(--trans-color)
 }
+    
 
+    
 
-
-    /* 01. HEADER ------------------
+/* 01. HEADER ------------------
     *   a. Header Top 
-    * ---------------*/
-
+* ---------------*/    
 .header-top .wrapper {
     font-size: var(--font-small);
     font-weight: var(--fw3);
@@ -302,7 +312,9 @@ header li > a {
 }
 .header-top li:hover ul {
     display: block;
-}
+}    
+
+
 
     /* 01. HEADER --------------------
     *   b. Header Nav
@@ -392,21 +404,6 @@ nav .fly-item {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 01. HEADER --------------------
     *   c. Header Main, Departments Category
     * ---------------*/
@@ -494,9 +491,78 @@ form.search button:hover {
     background-color: var(--dark-color);
 }
 
+
+
+
+
+
 /* 01. HEADER --------------------
     *   e. Responsive MENU - Off Canvas 
     * ---------------*/
+.site-off {
+   position :fixed;
+   width: 320px; 
+    height: var(--percent100);
+    background-color: var(--white-color);
+    overflow: auto ;
+    z-index: 1000;
+}
+.off-canvas {
+    width: var(--percent100);
+    height: var(--percent100);
+    touch-action: auto;
+    padding: 1.5em;
+}
+.off-canvas .canvas-head {
+    color: var(--white-color);
+    justify-content: space-between;
+    padding: 1.5em;
+    margin: -1.5em -1.5em 1.5em ;
+    background-color: var(--secondary-dark-color);
+    border-bottom-right-radius: 160px 25px;
+}
+.off-canvas .canvas-head {
+    z-index: 10;
+    position: relative;
+}
+.off-canvas .canvas-head .logo .circle {
+    opacity: .75;
+}
+.t-close {
+    font-size: 1.25em;
+    width: 32px;
+    height: 32px;
+    border-radius: var(--percent50);
+    background-color: var(--secondary-dark-color);
+    color: var(--white-color);
+    transition: var(--trans-background-color)
+}
+.t-close:hover {
+    background-color: var(--white-color);
+    color: var(--secondary-dark-color);
+    opacity: .75;
+}
+.off-canvas .dpt-head {
+    font-size: var(--font-small);
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    background-color: var(--light-bg-color);
+    border-radius: 7px 7px 0 0;
+}
+.off-canvas .has-child > :where(ul, .mega) {
+    font-size: var(--font-small);
+    font-weight: var(--fw3);
+    line-height: 28px;
+    padding-left: 3em;
+}
+
+
+
+
+
+
+
 
 
 
