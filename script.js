@@ -28,6 +28,7 @@ const menuButton = document.querySelector('.trigger'),
     addclass.classList.remove('showmenu');
   })
 
+
 // show sub menu on mobile
 const submenu = document.querySelectorAll('.has-child .icon-small');
 submenu.forEach((menu) => menu.addEventListener('click', toggle));
@@ -36,6 +37,15 @@ function toggle(e) {
     e.preventDefault();
     submenu.forEach((item) => item != this ? item.closest('.has-child').classList.remove('expand') : null);
     if (this.closest('.has-child').classList != 'expand');
-    this.closest('.has-child').classList.toggle('expand')
-    
+    this.closest('.has-child').classList.toggle('expand') 
 } 
+
+//slider
+const swiper = new Swiper('.swiper', {
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  
+});
