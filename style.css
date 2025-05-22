@@ -1005,7 +1005,7 @@ form.search button:hover {
 }
 .mini-links ul {
     font-size: var(--font-small); 
-    display: var(--light-text-color);
+    color: var(--light-text-color);
     margin-top: 1em;
 }
 .banners .second-links {
@@ -1018,19 +1018,41 @@ form.search button:hover {
   * 05.FOOTER
   * ------------------- */
 
+
+
 /* 05. FOOTER --------------------
      *   a. News Letter
      * ---------------*/
-
-
+.newsletter {
+    padding: 2.5em 0;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+.newsletter h3 {
+    font-size: 1.5em;
+}
+.newsletter p {
+    font-weight: var(--fw3);
+    color: var(--border-color);
+    margin: 0.5em 0 1.5em;
+}
+.newsletter p strong {
+    color: var(--primary-color);
+}
+.newsletter form {
+    max-width: 500px;
+    width: var(--percent100);
+}
 
 /* 05. FOOTER --------------------
      *   b. Widgets
      * ---------------*/
 
 
-
-
+.widgets {
+    padding: 3.5em 2.5em;
+    background-color: var(--light-bg-color);
+}
 /* 05. FOOTER --------------------
      *   c. Footer Info
      * ---------------*/
@@ -1200,7 +1222,8 @@ form.search button:hover {
         font-size: 1.25em;
     }
     .products.mini, 
-    .banner .row {
+    .banner .row, 
+    .widgets .row {
         flex: 0 0 50%;
     }
     .products.main .item {
@@ -1361,38 +1384,42 @@ form.search button:hover {
         right: 0;
         bottom: 0;
         background: linear-gradient(90deg, rgba(225, 225, 225, 1) 0%, rgba(255, 225, 225, 0) 100%);
-
     }
     .dpt-menu .mega {
         width: auto;
         min-width: var(--percent100);
-        
-    } 
+     }     
     .dpt-menu .has-child:hover .mega {
         display: flex;
     }
-
+   
     /* slider */
     .slider > div > .wrapper {
         width: calc(100% - (300px + 2em));
         margin-left: auto;
     }
-   
 
    /* products */
    
-.trending .products,
-.product-categories .row {
-    flex: 0 0 33.3333%;
-}
-.products.big .media {
-    max-height: 373px;
-}
+    .trending .products,
+    .product-categories .row {
+       flex: 0 0 33.3333%;
+    }
+    .products.big .media {
+       max-height: 373px;
+    }
 
-.products.main .item {
-    flex: 0 0 25%;
-}
+    .products.main .item,
+    .widgets .row {
+       flex: 0 0 25%;
+    }
 
+    /*  footer  */
+    .newsletter .box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
    
