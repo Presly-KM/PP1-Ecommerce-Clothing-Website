@@ -808,7 +808,7 @@ form.search button:hover {
     display: flex;
     flex-direction: column;
 }
-.products:where(.big,.main, .one) .content {
+.products:where(.big,.main, .one) .content {             /* Viens ajouter un espace (gap) entre les éléments ! */
     gap: 1em;
     margin-top: 1.25em;
 }
