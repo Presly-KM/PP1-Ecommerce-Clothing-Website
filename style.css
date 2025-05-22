@@ -865,9 +865,15 @@ form.search button:hover {
     display: flex;
     position: relative;
 }
+.products .stock-danger {
+    color: var(--primary-color);   
+}
 
-
-
+.flexwrap .row {
+    flex: 0 0 100%;
+    width: 100%;
+    margin-bottom: 2em;
+}
 
 
 
@@ -907,14 +913,21 @@ form.search button:hover {
 }
 
 
+
+
 /* 04. PRODUCT  --------------------
     *   d. MAIN product     
     * ---------------*/
 
-
-
-
-
+.products.main .item {
+    flex-direction: column;
+    flex: 0 0 100%; 
+    padding: 0 0.938em;
+    padding-bottom: 2em;
+}
+.products.main .media {
+    height: 390px;
+}
 /* -------------------
   * 05. BANNER
   * ------------------- */
@@ -1081,16 +1094,37 @@ form.search button:hover {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* --------------------
  *   15. RESPONSIVE
  * ---------------*/
 
 
-
+@media screen and (min-width: 481px) {
+    .products.main .item {
+        flex: 0 0 50%;
+    }
+}
 
 @media screen and (min-width:768px) {
     .products .price .current {
         font-size: 1.25em;
+    }
+    .products.mini {
+        flex: 0 0 50%;
+    }
+    .products.main .item {
+        flex: 0 0 33.3333%;
     }
 }
 
@@ -1274,6 +1308,9 @@ form.search button:hover {
     max-height: 373px;
 }
 
+.products.mini {
+    flex: 0 0 25%;
+}
 
 }
 
