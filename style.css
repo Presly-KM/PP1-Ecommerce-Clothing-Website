@@ -1058,7 +1058,9 @@ form.search button:hover {
      * ---------------*/
 
 
-
+.footer-info {
+    padding: 3.5em 0 5em;
+}
 
 /* ------------------
  * 06. BOTTOM MENU
