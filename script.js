@@ -41,7 +41,7 @@ function toggle(e) {
 } 
 
 //slider
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {                         // Cf. https://swiperjs.com/ pour récupérer le code qui sert à créer un slider
   loop: true,
 
   pagination: {
